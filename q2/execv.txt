@@ -1,0 +1,7 @@
+observations:
+
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  1000  4426  4417  0  80   0 -  6499 wait   pts/0    00:00:01 bash
+0 T  1000  6109  4426  0  80   0 - 14589 signal pts/0    00:00:00 vi
+4 R  1000 12282  4426  0  80   0 -  7970 -      pts/0    00:00:00 ps
+
