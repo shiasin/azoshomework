@@ -1,0 +1,21 @@
+  system()  executes a command specified in string by calling /bin/sh -c string, and returns
+       after the command has been completed.  During execution of the command,  SIGCHLD  will  be
+       blocked, and SIGINT and SIGQUIT will be ignored.
+
+
+and return values:
+
+ The  value returned is 127 if the execve() call for /bin/sh fails, -1 if there was another
+       error and the return code of the command otherwise.
+
+       If the value of string is NULL, system() returns nonzero if the shell  is  available,  and
+       zero if not.
+
+       system() does not affect the wait status of any other children.
+
+code:
+        #include <stdlib.h>
+
+       int system (const char * string);
+
+its main job ---> executing a shell coomand. 
